@@ -3,6 +3,9 @@ import './App.css';
 import Button from './components/Button';
 import Header from './components/Header';
 import Footer from './components/Footer'
+import Nav from './components/Nav'
+import { Routes, Route } from 'react-router-dom'
+
 
 
   
@@ -14,8 +17,14 @@ function App() {
 
   return (
     <div className="App">
-        <Header />
-        <img src="DSC_2376.jpg" id="portpic"/>
+      <Routes>
+        <Route path="/components/Resume" element={ <Nav /> } />
+      </Routes>
+      
+
+
+       <Header />
+        <img src="./components/DSC_2376.jpg" id="portpic"/>
       <div className="Main">
         <h1>About Me:</h1>
         <p>
@@ -28,7 +37,7 @@ function App() {
       <div className="Footer">
         <Button text="Awesome Button" sayHello={sayHello}/>
         <Footer />
-      </div>
+      </div> 
         
     </div>
   );
