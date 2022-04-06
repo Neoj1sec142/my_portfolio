@@ -1,10 +1,10 @@
 // import logo from './logo.svg';
 import './App.css';
 import Button from './components/Button';
-import Header from './components/Header';
 import Footer from './components/Footer'
 import Nav from './components/Nav'
 import { Routes, Route } from 'react-router-dom'
+import Main from './pages/Main'
 
 
 
@@ -17,23 +17,22 @@ function App() {
 
   return (
     <div className="App">
+      <header>
+        <Nav />
+      </header>
+      <div><Main /></div>
       <Routes>
-        <Route path="/components/Resume" element={ <Nav /> } />
+        <Route to='/' element={<Main />}>Home</Route>
+          <Route to='/About' >About</Route>
+          <Route to='/Resume' >Resume</Route>
+          <Route to='/Portfolio' >My Projects</Route>
+          <Route to='/Links' >Contact me</Route>
       </Routes>
       
 
 
-       <Header />
-        <img src="./components/DSC_2376.jpg" id="portpic"/>
-      <div className="Main">
-        <h1>About Me:</h1>
-        <p>
-        Full stack web developer and photographer who enjoys providing 
-        insightful solutions to complex problems. With a passion for 
-        precision and creativity I offer a creative problem solver 
-        who can assess and overcome..
-        </p>
-      </div>
+       
+        
       <div className="Footer">
         <Button text="Awesome Button" sayHello={sayHello}/>
         <Footer />
