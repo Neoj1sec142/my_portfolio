@@ -14,7 +14,6 @@ function Nav(props){
           <Link to='/Resume' style={{ color: '#FFFFFF' }} className='link'>Resume</Link>
           <Link to='/Portfolio' style={{ color: '#FFFFFF' }} className='link'>My Projects</Link>
           <Link to='/Links' style={{ color: '#FFFFFF' }} className='link'>Contact me</Link>
-          
           <div className="Footer">
             <a href="https://www.linkedin.com/in/mark-harmon-805aa3232/" 
               className="linkedin"

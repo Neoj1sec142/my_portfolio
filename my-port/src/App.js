@@ -20,7 +20,9 @@ function App() {
       <header>
         <Nav />
       </header>
-      <div><Main /></div>
+      <main>
+        <Main />
+      </main>
       <Routes>
         <Route to='/' element={<Main />}>Home</Route>
           <Route to='/About' >About</Route>
