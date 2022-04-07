@@ -10,9 +10,6 @@ import Main from './pages/Main'
   
 const App = () => {
 
-  function sayHello(){
-    alert("hello!")
-  }  
 
   return (
     <div className="App">
@@ -29,11 +26,12 @@ const App = () => {
       </Routes>
       </div>
       <div className="Footer">
-        <Button text="Awesome Button" sayHello={sayHello}/>
+        <input placeholder='Send your Email to Collaborate'/>
+        <button>Send</button>
       </div> 
         
     </div>
-  );
+  )
 }
 
 export default App;
