@@ -8,7 +8,7 @@ import Main from './pages/Main'
 
 
   
-function App() {
+const App = () => {
 
   function sayHello(){
     alert("hello!")

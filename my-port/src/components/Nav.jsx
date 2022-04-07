@@ -5,7 +5,7 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 //Still need to npm i the favicon for react
 
 
-function Nav(props){
+function Nav(){
     return(
         <header>
         <div className='nav-bar'>
