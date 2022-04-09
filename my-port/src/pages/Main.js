@@ -1,7 +1,8 @@
 import React from 'react'
 
-const Main = () => {
+const Main = (props) => {
     return (
+        <div>
         <main className="main">
             <h3>Statement:</h3>
             <p>Full stack web developer and photographer who enjoys providing 
@@ -10,6 +11,7 @@ const Main = () => {
                 who can assess and overcome..
             </p>
         </main>
+        </div>
     )
 }
 
