@@ -1,7 +1,7 @@
 .App {
   
   color: white;
-  background-image: url('https://c8.alamy.com/comp/PKNJA8/programming-code-and-global-network-with-technology-background-PKNJA8.jpg');
+  background-image: url('https://media.istockphoto.com/photos/abstract-binary-background-picture-id1205815347?k=20&m=1205815347&s=612x612&w=0&h=bSQIQcW5TsnFfF2_PBZhitaGJxqwtBnS0-q9wvoQxAc=');
   text-align: center;
   
 }
@@ -25,7 +25,8 @@
 .main{
   flex: 3;
   display: block;
-  color: green;
+  border: 3px solid white;
+  color: rgb(250, 251, 250);
   padding: 2em;
 }
 

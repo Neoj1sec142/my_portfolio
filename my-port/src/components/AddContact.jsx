@@ -6,7 +6,7 @@ const AddContact = ({ setContact, contact, handleSubmit }) => {
             <textarea 
                 onChange={(e) => setContact(e.target.value)} 
                 value={contact}
-                placeholder="Add your thoughts..."                
+                placeholder="Enter your email..."                
             />
             <button onClick={handleSubmit}>Add</button>
         </form> 
