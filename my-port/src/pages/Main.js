@@ -5,10 +5,11 @@ const Main = (props) => {
         <div>
         <main className="main">
             <h3>Statement:</h3>
-            <p>Full stack web developer and photographer who enjoys providing 
-                insightful solutions to complex problems. With a passion for 
-                precision and creativity I offer a creative problem solver and quick 
-                learner who can assess and overcome..
+            <p>Full stack developer and photographer with 
+                a passion for precision and learning, I 
+                come ready to grow with the company to 
+                create more efficient solutions to 
+                complex problems.
             </p>
         </main>
         </div>
