@@ -1,53 +1,45 @@
 //a lot of imports to follow for this page
-
-const mapStateToProps = ({ contatctState }) => {
-    return { contatctState }
-}
-
-const mapDispatchToProps = (dispatch) => {
-    return{
-        uploadContact: (id, newContact) => dispatch(UploadContact(id, newContact)),
-        updateConact: (contact) => dispatch(UpdateContact(contact)),
-        toggleMoreContact: (value) => dispatch(ToggleMoreContact(value))
-    }
-}
+import {useState, useEffect} from 'react'
+//import {Link} from 'react-router-dom'
 
 const Contact = (props) => {
+    const [contact, setContact] = useState({
+        name: '',
+        email: ''
+    })
+
     const handleSubmit = (e) => {
         e.preventDefault()
-        props.uploadContact(id, props.contactState.newContact)
-        props.toggleMoreComment(!props.contactState.moreContact)
+
+        window.top.location.reload(true)
+        setContact('')
     }
 
     const handleChange = async (e) => {
-        await props.updateComment(e.target.value)
+       e.preventDefault()
+       setContact({...contact, [e.target.name]: e.target.value })
     }
 
     return(
         <div className="contact-pg">
-
-            {props.contactState.moreContact && (
             <div>
-                <ReactStars
-                    onChange={''}
-                    size={24}
-                    color2={'#ffd700'}
-                    className={'stars'}
+                <textarea
+                    onChange={handleChange}
+                    name={'name'}
+                    value={contact.name}
+                    placeholder="Name here..."
                 />
                 <textarea
                     onChange={handleChange}
-                    value={props.contactState.newContact}
+                    name={'email'}
+                    value={contact.email}
                     placeholder="Email here..."
                 />
+                <button onClick={(e) => handleSubmit(e)}>Send</button>
             </div>
-            )}
-
-            <button onClick={handleSubmit}>
-            {props.contactState.moreConatct ? `Send` : `Add your email`}
-            </button>
 
         </div>
     )
 
 }
-export default connect(mapStateToProps, mapDispatchToProps)(Contact)
+export default Contact

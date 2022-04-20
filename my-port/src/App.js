@@ -3,6 +3,7 @@ import './App.css';
 import Nav from './components/Nav'
 import { Routes, Route } from 'react-router-dom'
 import Main from './pages/Main.js'
+import Contact from './pages/Contact'
  
 const App = () => {
 
@@ -20,7 +21,7 @@ const App = () => {
           <Route path='/About' />
           <Route path='/Resume' />
           <Route path='/Portfolio' />
-          <Route path='/Contact'/>
+          <Route path='/Contact' element={<Contact/>}/>
         </Routes>
       </div>
       
