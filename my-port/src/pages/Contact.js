@@ -22,21 +22,28 @@ const Contact = (props) => {
 
     return(
         <div className="contact-pg">
-            <div>
-                <textarea
-                    onChange={handleChange}
-                    name={'name'}
-                    value={contact.name}
-                    placeholder="Name here..."
-                />
-                <textarea
-                    onChange={handleChange}
-                    name={'email'}
-                    value={contact.email}
-                    placeholder="Email here..."
-                />
-                <button onClick={(e) => handleSubmit(e)}>Send</button>
-            </div>
+            <header>
+                <div>
+                    {/* <Link to='www.github.com/neoj1sec142' alt='_blank'>GitHub</Link> */}
+                </div>
+            </header>
+            <footer>
+                <div>
+                    <textarea
+                        onChange={handleChange}
+                        name={'name'}
+                        value={contact.name}
+                        placeholder="Name here..."
+                    />
+                    <textarea
+                        onChange={handleChange}
+                        name={'email'}
+                        value={contact.email}
+                        placeholder="Email here..."
+                    />
+                    <button onClick={(e) => handleSubmit(e)}>Send</button>
+                </div>
+            </footer>
 
         </div>
     )
