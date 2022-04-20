@@ -1,6 +1,6 @@
 //a lot of imports to follow for this page
 import {useState, useEffect} from 'react'
-//import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 const Contact = (props) => {
     const [contact, setContact] = useState({
@@ -24,7 +24,7 @@ const Contact = (props) => {
         <div className="contact-pg">
             <header>
                 <div>
-                    {/* <Link to='www.github.com/neoj1sec142' alt='_blank'>GitHub</Link> */}
+                    <Link to='/Resume' alt='_blank'>Resume</Link>
                 </div>
             </header>
             <footer>

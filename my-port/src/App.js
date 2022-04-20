@@ -4,6 +4,7 @@ import Nav from './components/Nav'
 import { Routes, Route } from 'react-router-dom'
 import Main from './pages/Main.js'
 import Contact from './pages/Contact'
+import MSR from './extra-stuff/MHRes.pages'
  
 const App = () => {
 
@@ -19,7 +20,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Main />}/>
           <Route path='/About' />
-          <Route path='/Resume' />
+          <Route path='/Resume'  element={<MSR/>}/>
           <Route path='/Portfolio' />
           <Route path='/Contact' element={<Contact/>}/>
         </Routes>
